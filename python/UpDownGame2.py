@@ -8,7 +8,7 @@ getmaxres = 101
 def getscore():
     global maxres
     getmaxres=101
-    f = open("C:\\Users\\proqk\\Documents\\school\\test.txt", 'r')
+    f = open("test.txt", 'r')
     line=f.readlines()
 
     for i in range(0, len(line)):
@@ -23,7 +23,7 @@ def getscore():
     f.close()
 
 def putscore():
-    f = open("C:\\Users\\proqk\\Documents\\school\\test.txt", 'w')
+    f = open("test.txt", 'w')
     for i in range(0, len(res)):
         f.write(name[i]+":"+str(res[i])+"\n")
     f.close()
