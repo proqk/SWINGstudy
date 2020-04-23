@@ -8,7 +8,7 @@ getmaxres = 101
 def getscore():
     global maxres
     getmaxres=101
-    f = open("test.txt", 'r')
+    f = open("C:\\Users\\proqk\\Documents\\school\\test.txt", 'r')
     line=f.readlines()
 
     for i in range(0, len(line)):
@@ -23,7 +23,7 @@ def getscore():
     f.close()
 
 def putscore():
-    f = open("test.txt", 'w')
+    f = open("C:\\Users\\proqk\\Documents\\school\\test.txt", 'w')
     for i in range(0, len(res)):
         f.write(name[i]+":"+str(res[i])+"\n")
     f.close()
@@ -39,9 +39,9 @@ while True:
     if(what == 1):
         ans = random.randint(1,101) ##정답 뽑기
         l = 1 ##왼쪽값
-        r=100 ##오른쪽값-수정1
+        r=100 ##오른쪽값-1주차 피드백 수정
         i=0	##n번째 도전
-        print(ans)
+        ##print(ans)
         while True:
             i+=1
             if(i > 10):
@@ -69,7 +69,7 @@ while True:
                     tmpname = input("닉네임을 입력하세요: ")
                     name.insert(0, tmpname)
                     maxres = i
-                    res.insert(0, i) ##최고기록일 때 추가-수정2                
+                    res.insert(0, i) ##최고기록일 때 추가-1주차 피드백 수정2              
                 break
     elif(what == 2):
         ##res.sort() ##점수 정렬1
@@ -77,6 +77,8 @@ while True:
         print("rank/name/score")
         for i in range(len(res)):
             print("%d. %s %d" % (i+1,name[i],res[i]))
-    else:
+    elif(what==3):
         putscore()
         break
+    else: #2주차 수정
+        print("잘못입력");
