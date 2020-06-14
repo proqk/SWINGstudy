@@ -26,11 +26,9 @@ os.chdir("/Users/proqk/Downloads/"+dir) #다운로드 받을 폴더로 이동
 
 
 comic_list=[]
-tmp_list=soup.select('td>a') #<td>안에 <a>태그에
-for i in tmp_list:
-    if('https' in i['href']): #다음 화를 미리 만나보세요 링크 패스
-        continue
-    comic_list.append(i['href'])
+tmp_list=soup.findAll("td", {"class", "title"}) #<td>안에 <a>태그에
+for i in tmp_list: #다음 화를 미리 만나보세요 링크 패스
+    comic_list.append(i.find("a")['href'])
 comic_list = sorted(set(comic_list))
 
 for i in range(len(comic_list)):
