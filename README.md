@@ -8,7 +8,7 @@
 ## 2. 파이썬 웹 크롤링
 * Crawling.py
 
-## 3. 파이썬 웹툰 크롤링
+## 3. 파이썬 네이버 웹툰 이미지 크롤링, 저장
 * Webtoon_Crawling.py
 
 ## 4. 파이썬 웹 자동 클릭 매크로(웹 게임 매크로)
@@ -33,3 +33,6 @@
 ### 파일 전송 시스템
 * socket_file_server.py
 * socket_file_client.py
+
+## 8. 파이썬 네이버 웹툰 요일별 제목 크롤링
+* Daily_webtoon_Crawling.py
