@@ -1,4 +1,4 @@
-# SWINGstudy
+# Python_Study
 학회 스터디+파이썬 개인 공부 모음
 
 ## 1. 파이썬 업다운게임
